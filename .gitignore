@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+venv/
+env/
+.venv/
+backend/venv/
+
+# Database
+*.db
+*.sqlite3
+*.db-shm
+*.db-wal
+backend/signal_clone.db
+backend/signal_clone.db-shm
+backend/signal_clone.db-wal
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Env vars
+.env
+.env.*
+
+# Project docs
+Imeplementation-plan.md
+progress.md
+rules.md
