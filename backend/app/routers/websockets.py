@@ -100,7 +100,6 @@ async def websocket_endpoint(websocket: WebSocket, token: str, db: AsyncSession 
                     "conversation_id": new_msg.conversation_id,
                     "sender_id": new_msg.sender_id,
                     "content": new_msg.content,
-                    "type": new_msg.type,
                     "created_at": new_msg.created_at.isoformat()
                 }
                 

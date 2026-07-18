@@ -30,8 +30,8 @@ export function MessageInput({ onSendMessage, onTyping }: MessageInputProps) {
   };
 
   return (
-    <div className="p-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 shrink-0">
-      <div className="bg-gray-100 dark:bg-gray-800 rounded-[20px] min-h-[40px] flex items-end px-2 py-1 relative">
+    <div className="p-4 bg-white dark:bg-[#111111] border-t border-gray-200 dark:border-[#2d2d2d] shrink-0">
+      <div className="bg-gray-100 dark:bg-[#202020] rounded-[20px] min-h-[40px] flex items-end px-2 py-1 relative">
         <button className="h-8 w-8 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-center shrink-0 mb-0.5">
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
         </button>
