@@ -15,7 +15,8 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
     db_user = User(
         username=user.username,
         phone=user.phone,
-        display_name=user.display_name
+        display_name=user.display_name,
+        avatar_url=user.avatar_url
     )
     db.add(db_user)
     try:

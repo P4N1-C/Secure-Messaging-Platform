@@ -6,6 +6,7 @@ class UserCreate(BaseModel):
     username: str
     phone: Optional[str] = None
     display_name: str
+    avatar_url: Optional[str] = None
 
 class LoginRequest(BaseModel):
     username: Optional[str] = None
@@ -25,6 +26,7 @@ class UserResponse(BaseModel):
     username: str
     phone: Optional[str] = None
     display_name: str
+    avatar_url: Optional[str] = None
 
     class Config:
         from_attributes = True
