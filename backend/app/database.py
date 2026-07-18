@@ -6,12 +6,18 @@ from sqlalchemy.engine import Engine
 import sqlite3
 
 # Define the path to the database file in the backend root
-DATABASE_URL = "sqlite+aiosqlite:///./signal_clone.db"
+DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite+aiosqlite:///./signal_clone.db")
+
+connect_args = {}
+# Asyncpg does not accept ?sslmode=require in the URL, so we pass it in connect_args
+if DATABASE_URL.startswith("postgresql+asyncpg"):
+    connect_args["ssl"] = "require"
 
 # Create the async engine
 engine = create_async_engine(
     DATABASE_URL,
     echo=False,
+    connect_args=connect_args,
 )
 
 # SQLite specifically needs this to enable WAL mode on connect

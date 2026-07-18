@@ -8,7 +8,15 @@ from app.database import get_db
 from app.models import User
 import os
 
-SECRET_KEY = os.environ.get("SECRET_KEY", "super-secret-key-for-development-only")
+_env_secret = os.environ.get("SECRET_KEY")
+_env_db = os.environ.get("DATABASE_URL")
+
+if _env_secret:
+    SECRET_KEY = _env_secret
+elif _env_db and "postgresql" in _env_db:
+    raise ValueError("FATAL: SECRET_KEY environment variable is missing but required in production!")
+else:
+    SECRET_KEY = "super-secret-key-for-development-only"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7 # 7 days
 

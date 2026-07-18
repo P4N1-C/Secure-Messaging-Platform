@@ -1,7 +1,9 @@
-fastapi
-uvicorn
+fastapi[standard]
+uvicorn[standard]
 sqlalchemy
+asyncpg
 aiosqlite
 pydantic
-python-jose
-passlib
+python-jose[cryptography]
+passlib[bcrypt]
+websockets
