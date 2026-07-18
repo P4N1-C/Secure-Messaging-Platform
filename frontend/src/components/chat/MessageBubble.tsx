@@ -35,7 +35,7 @@ export function MessageBubble({
   if (message.sender_id === null || message.sender_id === undefined) {
     return (
       <div className={`flex justify-center ${isConsecutiveWithPrev ? 'mt-1' : 'mt-4'} mb-1`}>
-        <div className="bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 text-xs px-3 py-1.5 rounded-full font-medium text-center max-w-[85%]">
+        <div className="bg-gray-100 dark:bg-[#202020] text-gray-500 dark:text-gray-400 text-xs px-3 py-1.5 rounded-full font-medium text-center max-w-[85%]">
           {message.content}
         </div>
       </div>
@@ -75,7 +75,7 @@ export function MessageBubble({
     <div className={`flex ${isSent ? 'justify-end' : 'justify-start'} ${marginClass}`}>
       {showSender && !isConsecutiveWithPrev && (
         <div 
-          className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 mr-2 shrink-0 flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
+          className="w-10 h-10 rounded-full bg-gray-300 dark:bg-[#2d2d2d] mr-2 shrink-0 flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
           onClick={() => senderMember && onAvatarClick?.(senderMember.user)}
         >
           {senderAvatar ? (
@@ -95,7 +95,7 @@ export function MessageBubble({
             className={`py-2.5 pl-4 pr-3.5 text-[15px] flex flex-col max-w-full min-w-0 ${
               isSent 
                 ? `bg-blue-600 text-white ${roundnessClass}` 
-                : `bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 ${roundnessClass}`
+                : `bg-gray-200 dark:bg-[#202020] text-gray-900 dark:text-gray-100 ${roundnessClass}`
             }`}
           >
             {!isSent && selectedConversation.type === 'group' && !isConsecutiveWithPrev && (
@@ -111,14 +111,14 @@ export function MessageBubble({
               {isSent && !message.isFailed && typeof message.id === 'number' && (
                 <div className="relative w-[22px] h-[14px] flex items-center shrink-0">
                   {/* Left check circle - always shown if not failed */}
-                  <div className={`absolute left-0 w-3.5 h-3.5 rounded-full border border-blue-200/80 flex items-center justify-center z-0 ${message.status === 'read' ? 'bg-blue-300' : 'bg-blue-600'}`}>
-                    <svg className="w-2 h-2 text-blue-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                  <div className={`absolute left-0 w-3.5 h-3.5 rounded-full border flex items-center justify-center z-0 ${message.status === 'read' ? 'bg-blue-100 border-blue-100' : 'bg-blue-600 border-blue-200/80'}`}>
+                    <svg className={`w-2 h-2 ${message.status === 'read' ? 'text-blue-600' : 'text-blue-100'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   {/* Right check circle - always shown (we consider sent as delivered for this simplified UI) */}
-                  <div className={`absolute left-[7px] w-3.5 h-3.5 rounded-full border border-blue-200/80 flex items-center justify-center z-10 ${message.status === 'read' ? 'bg-blue-300' : 'bg-blue-600'}`}>
-                    <svg className="w-2 h-2 text-blue-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                  <div className={`absolute left-[7px] w-3.5 h-3.5 rounded-full border flex items-center justify-center z-10 ${message.status === 'read' ? 'bg-blue-100 border-blue-100' : 'bg-blue-600 border-blue-200/80'}`}>
+                    <svg className={`w-2 h-2 ${message.status === 'read' ? 'text-blue-600' : 'text-blue-100'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
@@ -141,7 +141,7 @@ export function MessageBubble({
             className={`py-2.5 px-4 text-[15px] flex flex-col max-w-full min-w-0 ${
               isSent 
                 ? `bg-blue-600 text-white ${roundnessClass}` 
-                : `bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 ${roundnessClass}`
+                : `bg-gray-200 dark:bg-[#202020] text-gray-900 dark:text-gray-100 ${roundnessClass}`
             }`}
           >
             {!isSent && selectedConversation.type === 'group' && !isConsecutiveWithPrev && (

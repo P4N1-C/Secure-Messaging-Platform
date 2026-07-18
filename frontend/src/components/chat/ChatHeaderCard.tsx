@@ -57,8 +57,8 @@ export function ChatHeaderCard({
 
   return (
     <div className="flex flex-col items-center mt-10 mb-4">
-      <div className="relative border border-gray-200 dark:border-gray-800 rounded-[28px] min-w-[260px] pt-10 pb-5 px-6 flex flex-col items-center bg-white dark:bg-gray-900">
-        <div className="absolute -top-10 w-20 h-20 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-medium text-3xl shrink-0 overflow-hidden border-4 border-white dark:border-gray-900">
+      <div className="relative border border-gray-200 dark:border-[#2d2d2d] rounded-[28px] min-w-[260px] pt-10 pb-5 px-6 flex flex-col items-center bg-white dark:bg-[#111111]">
+        <div className="absolute -top-10 w-20 h-20 rounded-full flex items-center justify-center font-medium text-3xl shrink-0 overflow-hidden border-4 border-white dark:border-[#111111] bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400">
           {(() => {
             if (selectedConversation.type === 'direct') {
               const otherMember = selectedConversation.members.find(m => m.user.id !== currentUser?.id);
