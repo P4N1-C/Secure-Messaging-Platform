@@ -13,7 +13,7 @@ export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt, onR
   const [isConnected, setIsConnected] = useState(false);
   const wsRef = useRef<WebSocket | null>(null);
   const messageQueueRef = useRef<string[]>([]);
-  
+
   const callbacksRef = useRef({ onNewMessage, onTyping, onReadReceipt, onRemovedFromGroup });
   useEffect(() => {
     callbacksRef.current = { onNewMessage, onTyping, onReadReceipt, onRemovedFromGroup };
@@ -29,7 +29,7 @@ export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt, onR
       const wsUrl = process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000';
       ws = new WebSocket(`${wsUrl}/ws/${token}`);
       wsRef.current = ws; // Set ref immediately so we can check CONNECTING state
-      
+
       ws.onopen = () => {
         setIsConnected(true);
         // Flush queue
@@ -40,12 +40,12 @@ export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt, onR
           }
         }
       };
-      
+
       ws.onmessage = (event) => {
         try {
           const data = JSON.parse(event.data);
           const cbs = callbacksRef.current;
-          
+
           if (data.type === 'new_message' && cbs.onNewMessage) {
             cbs.onNewMessage(data.message);
           } else if (data.type === 'typing' && cbs.onTyping) {
@@ -59,7 +59,7 @@ export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt, onR
           console.error('Failed to parse WS message', e);
         }
       };
-      
+
       ws.onclose = () => {
         setIsConnected(false);
         if (wsRef.current === ws) {
@@ -67,7 +67,7 @@ export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt, onR
         }
         reconnectTimer = setTimeout(connect, 3000);
       };
-      
+
       ws.onerror = (err) => {
         console.error('WS error', err);
         ws.close();
@@ -79,11 +79,11 @@ export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt, onR
     return () => {
       clearTimeout(reconnectTimer);
       if (ws) {
-         ws.onclose = null; 
-         ws.close();
-         if (wsRef.current === ws) {
-           wsRef.current = null;
-         }
+        ws.onclose = null;
+        ws.close();
+        if (wsRef.current === ws) {
+          wsRef.current = null;
+        }
       }
     };
   }, [token]);
