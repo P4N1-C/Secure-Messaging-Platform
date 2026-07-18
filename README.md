@@ -22,6 +22,15 @@ A functional Signal-style secure messaging application built as a full-stack clo
 
 ---
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="./docs/direct_message_dark.png" alt="Direct Message" width="48%">
+  <img src="./docs/group_chat_light.png" alt="Group Chat" width="48%">
+</p>
+
+---
+
 ## 📑 Table of Contents
 
 - [Features](#-features)
