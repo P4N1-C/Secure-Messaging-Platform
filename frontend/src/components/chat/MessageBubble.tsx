@@ -7,6 +7,7 @@ interface MessageBubbleProps {
   currentUser: User | null;
   isConsecutiveWithPrev: boolean;
   isConsecutiveWithNext: boolean;
+  onAvatarClick?: (user: User) => void;
 }
 
 const getSenderColor = (senderId: number) => {
@@ -29,7 +30,18 @@ export function MessageBubble({
   currentUser,
   isConsecutiveWithPrev,
   isConsecutiveWithNext,
+  onAvatarClick,
 }: MessageBubbleProps) {
+  if (message.sender_id === null || message.sender_id === undefined) {
+    return (
+      <div className={`flex justify-center ${isConsecutiveWithPrev ? 'mt-1' : 'mt-4'} mb-1`}>
+        <div className="bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 text-xs px-3 py-1.5 rounded-full font-medium text-center max-w-[85%]">
+          {message.content}
+        </div>
+      </div>
+    );
+  }
+
   const isSent = message.sender_id === currentUser?.id;
   const showSender = selectedConversation.type === 'group' && !isSent;
   const senderMember = selectedConversation.members.find(m => m.user.id === message.sender_id);
@@ -62,7 +74,10 @@ export function MessageBubble({
   return (
     <div className={`flex ${isSent ? 'justify-end' : 'justify-start'} ${marginClass}`}>
       {showSender && !isConsecutiveWithPrev && (
-        <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 mr-2 shrink-0 flex items-center justify-center overflow-hidden">
+        <div 
+          className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 mr-2 shrink-0 flex items-center justify-center overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
+          onClick={() => senderMember && onAvatarClick?.(senderMember.user)}
+        >
           {senderAvatar ? (
              <img src={senderAvatar} alt={senderName} className="w-full h-full object-cover" />
           ) : (

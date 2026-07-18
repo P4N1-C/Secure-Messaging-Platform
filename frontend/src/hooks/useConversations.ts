@@ -16,14 +16,14 @@ export function useConversations(currentUser: User | null) {
 
   const getConversationName = (conv: Conversation) => {
     if (conv.type === 'group') return conv.name || 'Unnamed Group';
-    const otherMember = conv.members.find(m => m.user.id !== currentUser?.id);
-    return otherMember?.user.display_name || otherMember?.user.username || otherMember?.user.phone || 'Unknown User';
+    const otherMember = conv.members.find(m => m.user && m.user.id !== currentUser?.id);
+    return otherMember?.user?.display_name || otherMember?.user?.username || otherMember?.user?.phone || 'Unknown User';
   };
 
   const getConversationAvatar = (conv: Conversation) => {
     if (conv.type === 'group') return conv.name ? conv.name[0].toUpperCase() : 'G';
-    const otherMember = conv.members.find(m => m.user.id !== currentUser?.id);
-    const name = otherMember?.user.display_name || otherMember?.user.username || 'U';
+    const otherMember = conv.members.find(m => m.user && m.user.id !== currentUser?.id);
+    const name = otherMember?.user?.display_name || otherMember?.user?.username || 'U';
     return name[0].toUpperCase();
   };
 
@@ -96,6 +96,7 @@ export function useConversations(currentUser: User | null) {
         return c;
       })
     );
+    return newMember;
   };
 
   const handleRemoveMember = async (conversationId: number, userId: number) => {
@@ -104,13 +105,16 @@ export function useConversations(currentUser: User | null) {
     setConversations(prev => 
       prev.map(c => {
         if (c.id === conversationId) {
-          return { ...c, members: c.members.filter(m => m.user.id !== userId) };
+          return { ...c, members: c.members.filter(m => m.user?.id !== userId) };
         }
         return c;
       })
     );
   };
 
+  const removeConversation = (conversationId: number) => {
+    setConversations(prev => prev.filter(c => c.id !== conversationId));
+  };
 
   return {
     conversations,
@@ -125,5 +129,6 @@ export function useConversations(currentUser: User | null) {
     handleCreateDirectConversation,
     handleAddMember,
     handleRemoveMember,
+    removeConversation,
   };
 }

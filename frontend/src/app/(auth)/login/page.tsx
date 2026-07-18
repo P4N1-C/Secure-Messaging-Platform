@@ -131,9 +131,10 @@ export default function LoginPage() {
               <input
                 type="text"
                 value={otp}
-                onChange={(e) => setOtp(e.target.value)}
+                onChange={(e) => setOtp(e.target.value.replace(/\D/g, '').slice(0, 6))}
                 className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors text-gray-900"
                 placeholder="123456"
+                maxLength={6}
                 required
               />
             </div>

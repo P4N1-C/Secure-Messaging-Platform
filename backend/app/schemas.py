@@ -48,7 +48,7 @@ class MessageCreate(BaseModel):
 class MessageResponse(BaseModel):
     id: int
     conversation_id: int
-    sender_id: int
+    sender_id: Optional[int] = None
     content: str
     created_at: datetime
     status: Optional[str] = None

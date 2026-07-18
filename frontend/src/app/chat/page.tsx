@@ -13,6 +13,7 @@ import { ConversationList } from '@/components/chat/ConversationList';
 import { ChatPane } from '@/components/chat/ChatPane';
 import { GroupCreateModal } from '@/components/chat/GroupCreateModal';
 import { GroupInfoPanel } from '@/components/chat/GroupInfoPanel';
+import { UserInfoModal } from '@/components/chat/UserInfoModal';
 import SearchUsersModal from '@/components/chat/SearchUsersModal';
 import { Toast, ToastProps } from '@/components/ui/Toast';
 import { SettingsPlaceholder } from '@/components/ui/SettingsPlaceholder';
@@ -27,6 +28,7 @@ export default function Home() {
 
   const [isCreateGroupOpen, setIsCreateGroupOpen] = useState(false);
   const [isGroupInfoOpen, setIsGroupInfoOpen] = useState(false);
+  const [selectedUserForInfo, setSelectedUserForInfo] = useState<User | null>(null);
   const [isSearchUsersOpen, setIsSearchUsersOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [toasts, setToasts] = useState<ToastProps[]>([]);
@@ -63,6 +65,7 @@ export default function Home() {
     handleCreateDirectConversation,
     handleAddMember,
     handleRemoveMember,
+    removeConversation,
   } = useConversations(currentUser);
 
   const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
@@ -131,11 +134,20 @@ export default function Home() {
     }
   }, []);
 
+  const handleRemovedFromGroup = useCallback((conversationId: number) => {
+    removeConversation(conversationId);
+    if (selectedConversationRef.current?.id === conversationId) {
+       setSelectedConversation(null);
+       addToast('You were removed from the group', 'error');
+    }
+  }, [removeConversation]);
+
   const { isConnected, sendMessageViaWs, sendTypingViaWs, sendMarkReadViaWs } = useWebSocket({
     token,
     onNewMessage: actualHandleNewMessage,
     onTyping: handleWsTyping,
-    onReadReceipt: actualHandleReadReceipt
+    onReadReceipt: actualHandleReadReceipt,
+    onRemovedFromGroup: handleRemovedFromGroup
   });
   
   useEffect(() => { sendMarkReadViaWsRef.current = sendMarkReadViaWs; }, [sendMarkReadViaWs]);
@@ -323,8 +335,19 @@ export default function Home() {
           getConversationAvatar={getConversationAvatar}
           isTyping={isTyping}
           onTyping={() => selectedConversation && sendTypingViaWs(selectedConversation.id)}
-          onOpenInfo={() => selectedConversation && setIsGroupInfoOpen(true)}
+          onOpenInfo={() => {
+            if (selectedConversation) {
+              if (selectedConversation.type === 'direct') {
+                const otherUser = selectedConversation.members.find(m => m.user.id !== currentUser?.id)?.user;
+                if (otherUser) setSelectedUserForInfo(otherUser);
+              } else {
+                setIsGroupInfoOpen(true);
+              }
+            }
+          }}
           onBack={() => setSelectedConversation(null)}
+          onToast={addToast}
+          onOpenUserInfo={setSelectedUserForInfo}
         />
       </main>
 
@@ -334,6 +357,7 @@ export default function Home() {
         onCreate={async (name, userIds) => {
           const newGroup = await handleCreateGroup(name, userIds);
           setSelectedConversation(newGroup);
+          setIsCreateGroupOpen(false);
         }}
       />
 
@@ -366,15 +390,10 @@ export default function Home() {
           conversation={selectedConversation} 
           currentUser={currentUser} 
           onAddMember={async (userId) => {
-            await handleAddMember(selectedConversation.id, userId);
-            // Re-fetch or rely on the hook's setConversations to update the selected one if we had a better way
-            // For now, since selectedConversation is just a reference to a snapshot, we might need to manually update it
-            // or we could just let the user re-open it. Since we pass conversation={selectedConversation},
-            // and useConversations updates it in `conversations`, we should ideally derive selectedConversation 
-            // from the `conversations` list in page.tsx. Let's patch selectedConversation on the fly here to immediately reflect changes:
+            const newMember = await handleAddMember(selectedConversation.id, userId);
             setSelectedConversation(prev => {
                if (!prev) return prev;
-               return { ...prev, members: [...prev.members, { id: 0, user: { id: userId, phone: 'loading', display_name: 'Loading...' }, role: 'member' } as any] };
+               return { ...prev, members: [...prev.members, newMember] };
             });
             addToast('Added to group', 'success');
           }} 
@@ -382,15 +401,23 @@ export default function Home() {
             await handleRemoveMember(selectedConversation.id, userId);
             setSelectedConversation(prev => {
                if (!prev) return prev;
-               return { ...prev, members: prev.members.filter(m => m.user.id !== userId) };
+               return { ...prev, members: prev.members.filter(m => m.user?.id !== userId) };
             });
             addToast('Removed from group', 'success');
           }} 
+          onOpenUserInfo={setSelectedUserForInfo}
         />
       )}
 
       <SettingsPlaceholder isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
       
+      <UserInfoModal
+        isOpen={!!selectedUserForInfo}
+        onClose={() => setSelectedUserForInfo(null)}
+        user={selectedUserForInfo}
+        sharedGroups={selectedUserForInfo ? conversations.filter(c => c.type === 'group' && c.members.some(m => m.user.id === selectedUserForInfo.id)).map(c => c.name || 'Unnamed Group') : []}
+      />
+
       <div className="fixed bottom-0 left-0 right-0 p-4 pointer-events-none z-50 flex flex-col gap-2">
         {toasts.map(toast => (
           <Toast key={toast.id} {...toast} onDismiss={toast.onDismiss} />

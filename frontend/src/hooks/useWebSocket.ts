@@ -6,17 +6,18 @@ interface UseWebSocketProps {
   onNewMessage?: (message: Message) => void;
   onTyping?: (conversationId: number, userId: number) => void;
   onReadReceipt?: (messageId: number, userId: number, status: string, conversationId: number) => void;
+  onRemovedFromGroup?: (conversationId: number) => void;
 }
 
-export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt }: UseWebSocketProps) {
+export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt, onRemovedFromGroup }: UseWebSocketProps) {
   const [isConnected, setIsConnected] = useState(false);
   const wsRef = useRef<WebSocket | null>(null);
   const messageQueueRef = useRef<string[]>([]);
   
-  const callbacksRef = useRef({ onNewMessage, onTyping, onReadReceipt });
+  const callbacksRef = useRef({ onNewMessage, onTyping, onReadReceipt, onRemovedFromGroup });
   useEffect(() => {
-    callbacksRef.current = { onNewMessage, onTyping, onReadReceipt };
-  }, [onNewMessage, onTyping, onReadReceipt]);
+    callbacksRef.current = { onNewMessage, onTyping, onReadReceipt, onRemovedFromGroup };
+  }, [onNewMessage, onTyping, onReadReceipt, onRemovedFromGroup]);
 
   useEffect(() => {
     if (!token) return;
@@ -51,6 +52,8 @@ export function useWebSocket({ token, onNewMessage, onTyping, onReadReceipt }: U
             cbs.onTyping(data.conversation_id, data.user_id);
           } else if (data.type === 'read_receipt' && cbs.onReadReceipt) {
             cbs.onReadReceipt(data.message_id, data.user_id, data.status, data.conversation_id);
+          } else if (data.type === 'removed_from_group' && cbs.onRemovedFromGroup) {
+            cbs.onRemovedFromGroup(data.conversation_id);
           }
         } catch (e) {
           console.error('Failed to parse WS message', e);

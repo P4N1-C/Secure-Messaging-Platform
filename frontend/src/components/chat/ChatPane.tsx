@@ -16,6 +16,8 @@ interface ChatPaneProps {
   onTyping?: () => void;
   onOpenInfo?: () => void;
   onBack?: () => void;
+  onToast?: (message: string, type: 'info' | 'error' | 'success') => void;
+  onOpenUserInfo?: (user: User) => void;
 }
 
 export function ChatPane({
@@ -29,6 +31,8 @@ export function ChatPane({
   onTyping,
   onOpenInfo,
   onBack,
+  onToast,
+  onOpenUserInfo,
 }: ChatPaneProps) {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -91,6 +95,7 @@ export function ChatPane({
           getConversationAvatar={getConversationAvatar}
           firstMessage={messages.length > 0 ? messages[0] : undefined}
           onOpenInfo={onOpenInfo}
+          onToast={onToast}
         />
 
         {messages.map((msg, index) => {
@@ -105,6 +110,7 @@ export function ChatPane({
               currentUser={currentUser}
               isConsecutiveWithPrev={isConsecutiveWithPrev}
               isConsecutiveWithNext={isConsecutiveWithNext}
+              onAvatarClick={onOpenUserInfo}
             />
           );
         })}

@@ -3877,3 +3877,1784 @@ INFO:     127.0.0.1:54182 - "GET /conversations HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54186 - "GET /conversations HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54186 - "OPTIONS /conversations/10/messages HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54186 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34326 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34326 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34326 - "OPTIONS /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34326 - "POST /auth/verify-otp HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:34326 - "POST /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40246 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:34326 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34326 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40262 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40262 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35706 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35710 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35710 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44092 - "OPTIONS /conversations/9/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44096 - "GET /conversations/9/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53804 - "OPTIONS /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "GET /conversations/9/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58444 - "OPTIONS /conversations/3/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58444 - "GET /conversations/3/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41442 - "OPTIONS /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41444 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47394 - "OPTIONS /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47394 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/models.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [62619]
+WARNING:  StatReload detected changes in 'app/schemas.py'. Reloading...
+INFO:     Started server process [73040]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [73040]
+INFO:     Started server process [73041]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51218 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51226 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51242 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51252 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48558 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48558 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48558 - "OPTIONS /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48558 - "POST /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48570 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48558 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48558 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48558 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48574 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48574 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48574 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48582 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60188 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60194 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60194 - "OPTIONS /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60188 - "POST /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60188 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60194 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60210 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDA0ODI3fQ.03HxwvQqM_Ub2KpyYfND1w8MeYEaTPCDxlrd8Mffl8k" [accepted]
+INFO:     127.0.0.1:60226 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60194 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60232 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDA0ODI3fQ.03HxwvQqM_Ub2KpyYfND1w8MeYEaTPCDxlrd8Mffl8k" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60226 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60188 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60194 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35118 - "POST /auth/login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56528 - "OPTIONS /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56528 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51580 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51580 - "POST /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51580 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51592 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51606 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51592 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51580 - "GET /conversations HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [73041]
+INFO:     Started server process [73606]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57158 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57164 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57170 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57184 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57192 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57194 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57496 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57552 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57580 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57594 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57508 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57504 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57580 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57494 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57538 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57512 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57606 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57564 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57612 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57612 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57616 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57564 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57594 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57580 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57504 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57552 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57496 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57538 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57552 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57580 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33936 - "OPTIONS /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33950 - "GET /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38700 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38706 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38708 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38708 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56462 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "OPTIONS /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "GET /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "OPTIONS /conversations/12/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "GET /conversations/12/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "OPTIONS /conversations/13/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "GET /conversations/13/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56482 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "OPTIONS /conversations/14/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56482 - "GET /conversations/14/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56482 - "OPTIONS /conversations/15/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56470 - "GET /conversations/15/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56482 - "GET /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50782 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50780 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50780 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50780 - "OPTIONS /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50780 - "GET /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37998 - "OPTIONS /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38000 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38000 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37998 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43020 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43020 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43020 - "OPTIONS /conversations/16/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43020 - "GET /conversations/16/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42558 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42572 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42572 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42578 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42580 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42606 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42614 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42596 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42596 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42630 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42634 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42634 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42638 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42638 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42646 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+WARNING:  StatReload detected changes in 'app/models.py'. Reloading...
+INFO:     127.0.0.1:42650 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42614 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42580 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [73606]
+INFO:     Started server process [74596]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:42666 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42690 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42704 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42678 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42708 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:42718 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:43048 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43048 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43048 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43048 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43048 - "OPTIONS /conversations/17/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43048 - "GET /conversations/17/messages HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [74596]
+INFO:     Started server process [75022]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58040 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58046 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58058 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58072 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58078 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58080 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:41796 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37238 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37238 - "POST /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37238 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37238 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37238 - "POST /auth/verify-otp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37238 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37250 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3IiwiZXhwIjoxNzg1MDA1Njg5fQ.GvPX_A7wVAz4FDixAd8IOhl5WVWIsOQ9mtzus6DcE4k" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37238 - "POST /conversations HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 345, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/conversations.py", line 122, in create_conversation
+    sys_msg = Message(
+        conversation_id=db_conv.id,
+    ...<2 lines>...
+        type="system"
+    )
+  File "<string>", line 4, in __init__
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/orm/state.py", line 596, in _initialize_instance
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/orm/state.py", line 594, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/orm/decl_base.py", line 2179, in _declarative_constructor
+    raise TypeError(
+        "%r is an invalid keyword argument for %s" % (k, cls_.__name__)
+    )
+TypeError: 'type' is an invalid keyword argument for Message
+INFO:     127.0.0.1:37266 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37906 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37906 - "POST /conversations HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 345, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/conversations.py", line 122, in create_conversation
+    sys_msg = Message(
+        conversation_id=db_conv.id,
+    ...<2 lines>...
+        type="system"
+    )
+  File "<string>", line 4, in __init__
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/orm/state.py", line 596, in _initialize_instance
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/orm/state.py", line 594, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/sqlalchemy/orm/decl_base.py", line 2179, in _declarative_constructor
+    raise TypeError(
+        "%r is an invalid keyword argument for %s" % (k, cls_.__name__)
+    )
+TypeError: 'type' is an invalid keyword argument for Message
+WARNING:  StatReload detected changes in 'test_group_ws_2.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75022]
+INFO:     Started server process [75715]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49746 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49756 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49762 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49750 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49770 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49774 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+WARNING:  StatReload detected changes in 'app/schemas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75715]
+INFO:     Started server process [75813]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75813]
+INFO:     Started server process [75822]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:35998 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:36002 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:36014 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:36016 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:36030 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:36034 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75822]
+INFO:     Started server process [75908]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:40428 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40420 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40448 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40434 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40422 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40452 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52156 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52156 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52164 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52156 - "OPTIONS /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52164 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52156 - "GET /conversations/21/messages HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75908]
+INFO:     Started server process [75946]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52178 - "OPTIONS /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52178 - "GET /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35908 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35924 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35920 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35940 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35930 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35946 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:43292 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+WARNING:  StatReload detected changes in 'test_group_ws_2.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75946]
+INFO:     Started server process [76063]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:39598 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39616 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39612 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39610 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39618 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39634 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49288 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49288 - "POST /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49288 - "OPTIONS /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59352 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49288 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42150 - "OPTIONS /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42150 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34282 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34282 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34282 - "OPTIONS /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34282 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54392 - "OPTIONS /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54394 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39570 - "OPTIONS /conversations/23/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39570 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50042 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50050 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45120 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45120 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36496 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38634 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:38636 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38636 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38636 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36542 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44984 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44984 - "POST /conversations/23/members HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:44134 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:44146 - "GET /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44146 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:57810 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57830 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57824 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57830 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57830 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46432 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:46436 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46436 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46436 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46436 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47984 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47984 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59650 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [76063]
+INFO:     Started server process [77100]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:45562 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:45564 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45564 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45574 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:45584 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:45586 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:45592 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:45594 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:43682 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43682 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43682 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43682 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43682 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43682 - "POST /conversations/23/members HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:47016 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:44594 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44594 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44594 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44610 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:44594 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44594 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44594 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44594 - "OPTIONS /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44594 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "OPTIONS /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33394 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:54098 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54122 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54112 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54112 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54112 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:39238 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39254 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39254 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39254 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39254 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39270 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39272 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39272 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39272 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39272 - "OPTIONS /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39272 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35848 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35858 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35858 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35858 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35858 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35864 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35858 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35858 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [77100]
+INFO:     Started server process [78267]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:37732 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37738 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37748 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37744 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37742 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37756 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48092 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48076 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48100 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48114 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48100 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48108 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48116 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48140 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48126 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48148 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48158 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48120 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48148 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48092 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48140 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48116 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48166 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48174 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48116 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48284 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48300 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:48140 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48126 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48174 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42744 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42744 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42744 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42746 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36280 - "OPTIONS /conversations/23/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36280 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/schemas.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [78267]
+INFO:     Started server process [78902]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:40962 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40936 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40940 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40948 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40952 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40974 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [78902]
+Process SpawnProcess-21:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.13/multiprocessing/process.py", line 313, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/usr/lib64/python3.13/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/server.py", line 74, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/usr/lib64/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib64/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib64/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/server.py", line 78, in serve
+    await self._serve(sockets)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/server.py", line 85, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/config.py", line 493, in load
+    self.loaded_app = self.load_app()
+                      ~~~~~~~~~~~~~^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/config.py", line 427, in load_app
+    return import_from_string(self.app)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1023, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/main.py", line 3, in <module>
+    from app.routers import auth, users, contacts, conversations, websockets
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/conversations.py", line 461, in <module>
+    async def update_member_role(id: int, user_id: int, request: RoleUpdateRequest, current_user: User = Depends(get_current_user), db: AsyncSession = Depends(get_db)):
+                                                                 ^^^^^^^^^^^^^^^^^
+NameError: name 'RoleUpdateRequest' is not defined
+WARNING:  StatReload detected changes in 'app/schemas.py'. Reloading...
+INFO:     Started server process [79322]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:40182 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53954 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53972 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42212 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42216 - "OPTIONS /users/search?q=a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52076 - "OPTIONS /users/search?q=ali HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56822 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56806 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40150 - "GET /users/me HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 350, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1788, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 177, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 174, in app
+    await func(session)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 781, in app
+    await dependant.call(**solved_result.values)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 38, in websocket_endpoint
+    await manager.connect(user_id, websocket)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/websocket_manager.py", line 13, in connect
+    await websocket.accept()
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 110, in accept
+    await self.send({"type": "websocket.accept", "subprotocol": subprotocol, "headers": headers})
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 76, in send
+    await self._send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 455, in send
+    raise RuntimeError(
+        f"Expected ASGI message 'websocket.send' or 'websocket.close', but got '{message['type']}'."
+    )
+RuntimeError: Expected ASGI message 'websocket.send' or 'websocket.close', but got 'websocket.accept'.
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 350, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1788, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 177, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 174, in app
+    await func(session)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 781, in app
+    await dependant.call(**solved_result.values)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 38, in websocket_endpoint
+    await manager.connect(user_id, websocket)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/websocket_manager.py", line 13, in connect
+    await websocket.accept()
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 110, in accept
+    await self.send({"type": "websocket.accept", "subprotocol": subprotocol, "headers": headers})
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 76, in send
+    await self._send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 455, in send
+    raise RuntimeError(
+        f"Expected ASGI message 'websocket.send' or 'websocket.close', but got '{message['type']}'."
+    )
+RuntimeError: Expected ASGI message 'websocket.send' or 'websocket.close', but got 'websocket.accept'.
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 350, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1788, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 177, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 174, in app
+    await func(session)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 781, in app
+    await dependant.call(**solved_result.values)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 38, in websocket_endpoint
+    await manager.connect(user_id, websocket)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/websocket_manager.py", line 13, in connect
+    await websocket.accept()
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 110, in accept
+    await self.send({"type": "websocket.accept", "subprotocol": subprotocol, "headers": headers})
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 76, in send
+    await self._send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 455, in send
+    raise RuntimeError(
+        f"Expected ASGI message 'websocket.send' or 'websocket.close', but got '{message['type']}'."
+    )
+RuntimeError: Expected ASGI message 'websocket.send' or 'websocket.close', but got 'websocket.accept'.
+INFO:     127.0.0.1:57782 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 350, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1788, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 177, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 174, in app
+    await func(session)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 781, in app
+    await dependant.call(**solved_result.values)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 38, in websocket_endpoint
+    await manager.connect(user_id, websocket)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/websocket_manager.py", line 13, in connect
+    await websocket.accept()
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 110, in accept
+    await self.send({"type": "websocket.accept", "subprotocol": subprotocol, "headers": headers})
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 76, in send
+    await self._send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 455, in send
+    raise RuntimeError(
+        f"Expected ASGI message 'websocket.send' or 'websocket.close', but got '{message['type']}'."
+    )
+RuntimeError: Expected ASGI message 'websocket.send' or 'websocket.close', but got 'websocket.accept'.
+INFO:     127.0.0.1:40160 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57798 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:34666 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40150 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53938 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53968 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52490 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53998 - "GET /users/me HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 350, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1788, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 177, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 174, in app
+    await func(session)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 781, in app
+    await dependant.call(**solved_result.values)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 38, in websocket_endpoint
+    await manager.connect(user_id, websocket)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/websocket_manager.py", line 13, in connect
+    await websocket.accept()
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 110, in accept
+    await self.send({"type": "websocket.accept", "subprotocol": subprotocol, "headers": headers})
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 76, in send
+    await self._send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 455, in send
+    raise RuntimeError(
+        f"Expected ASGI message 'websocket.send' or 'websocket.close', but got '{message['type']}'."
+    )
+RuntimeError: Expected ASGI message 'websocket.send' or 'websocket.close', but got 'websocket.accept'.
+INFO:     127.0.0.1:52458 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40192 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40180 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52090 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52094 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52454 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57772 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52460 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 350, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1788, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 177, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 174, in app
+    await func(session)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 781, in app
+    await dependant.call(**solved_result.values)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 38, in websocket_endpoint
+    await manager.connect(user_id, websocket)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/websocket_manager.py", line 13, in connect
+    await websocket.accept()
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 110, in accept
+    await self.send({"type": "websocket.accept", "subprotocol": subprotocol, "headers": headers})
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 76, in send
+    await self._send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 455, in send
+    raise RuntimeError(
+        f"Expected ASGI message 'websocket.send' or 'websocket.close', but got '{message['type']}'."
+    )
+RuntimeError: Expected ASGI message 'websocket.send' or 'websocket.close', but got 'websocket.accept'.
+INFO:     127.0.0.1:53954 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40192 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52466 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:34650 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52502 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52076 - "GET /users/search?q=ali HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52474 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 350, in run_asgi
+    result = await self.app(self.scope, self.receive, self.send)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 1788, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/routing.py", line 350, in handle
+    await self.app(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 177, in app
+    await wrap_app_handling_exceptions(app, session)(scope, receive, send)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 174, in app
+    await func(session)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/fastapi/routing.py", line 781, in app
+    await dependant.call(**solved_result.values)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 38, in websocket_endpoint
+    await manager.connect(user_id, websocket)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/websocket_manager.py", line 13, in connect
+    await websocket.accept()
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 110, in accept
+    await self.send({"type": "websocket.accept", "subprotocol": subprotocol, "headers": headers})
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/websockets.py", line 76, in send
+    await self._send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/starlette/_exception_handler.py", line 39, in sender
+    await send(message)
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/venv/lib64/python3.13/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py", line 455, in send
+    raise RuntimeError(
+        f"Expected ASGI message 'websocket.send' or 'websocket.close', but got '{message['type']}'."
+    )
+RuntimeError: Expected ASGI message 'websocket.send' or 'websocket.close', but got 'websocket.accept'.
+INFO:     127.0.0.1:42216 - "GET /users/search?q=a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53972 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42212 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57772 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52506 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53954 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52502 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53972 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40150 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40192 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53954 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57772 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42212 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42212 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53954 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52128 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52130 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52130 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52146 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52158 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52158 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52170 - "OPTIONS /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52170 - "GET /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52170 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52180 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52170 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52194 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52184 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52194 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52170 - "GET /conversations/5/messages HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:49810 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49824 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49826 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49826 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33842 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:33830 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33830 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49826 - "OPTIONS /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49826 - "GET /conversations/5/messages HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:33846 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56682 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56696 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "OPTIONS /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56700 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56696 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56706 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56696 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56720 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56696 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56730 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56696 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56740 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56696 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "OPTIONS /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54526 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56696 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56696 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "OPTIONS /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "OPTIONS /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "OPTIONS /conversations/23/members/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "DELETE /conversations/23/members/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "OPTIONS /conversations/23/members/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "DELETE /conversations/23/members/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56320 - "DELETE /conversations/23/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44456 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54360 - "OPTIONS /conversations/8/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54360 - "GET /conversations/8/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54360 - "OPTIONS /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54366 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:54370 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54388 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54374 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54388 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54370 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54370 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43740 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:43748 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43748 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43748 - "OPTIONS /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43748 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33514 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33514 - "POST /conversations/23/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33514 - "DELETE /conversations/23/members/3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39792 - "OPTIONS /conversations/22/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39792 - "GET /conversations/22/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50988 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50996 - "OPTIONS /conversations/20/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50996 - "GET /conversations/20/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50996 - "OPTIONS /conversations/20/members/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50996 - "DELETE /conversations/20/members/7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56924 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56940 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59704 - "OPTIONS /conversations/18/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59704 - "GET /conversations/18/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59714 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "POST /contacts HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59712 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51590 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59712 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51596 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "POST /contacts HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59712 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51596 - "GET /conversations/8/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59712 - "POST /contacts HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59712 - "POST /contacts HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:59712 - "POST /contacts HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:37738 - "OPTIONS /conversations/19/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37738 - "GET /conversations/19/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37738 - "OPTIONS /conversations/3/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37738 - "GET /conversations/3/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51174 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51178 - "GET /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51174 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51174 - "POST /contacts HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:51664 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51664 - "POST /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51664 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34766 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34768 - "POST /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34768 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34768 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34766 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34768 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34768 - "POST /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34768 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35310 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35314 - "OPTIONS /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35310 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35314 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35310 - "POST /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35310 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42982 - "OPTIONS /conversations/15/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42982 - "GET /conversations/15/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38900 - "OPTIONS /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42982 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38900 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42982 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45864 - "OPTIONS /conversations/15/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45864 - "GET /conversations/15/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39920 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39950 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39972 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40006 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39936 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39946 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39962 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39920 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39978 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40018 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39988 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40002 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40006 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40002 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39920 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40026 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40040 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39988 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40040 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40030 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40006 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39972 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39988 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40040 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39950 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39950 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40040 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40006 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51440 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51444 - "OPTIONS /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51440 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51444 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51444 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52304 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52304 - "OPTIONS /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52320 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52320 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52334 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45314 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52320 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52320 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52320 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52304 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52320 - "GET /conversations/10/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46920 - "OPTIONS /conversations/9/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46916 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46922 - "GET /conversations/9/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46922 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46916 - "POST /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56582 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56582 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56588 - "OPTIONS /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56588 - "GET /conversations/6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56588 - "OPTIONS /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56588 - "GET /conversations/23/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40672 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40672 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "OPTIONS /conversations/14/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "GET /conversations/14/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "OPTIONS /conversations/14/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "DELETE /conversations/14/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37644 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37644 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37650 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:40660 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37644 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40660 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47524 - "OPTIONS /conversations/13/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47524 - "GET /conversations/13/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47524 - "OPTIONS /conversations/13/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47524 - "DELETE /conversations/13/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44822 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44834 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44822 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44836 - "OPTIONS /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44836 - "GET /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44836 - "OPTIONS /conversations/11/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44836 - "DELETE /conversations/11/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41582 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41586 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41582 - "GET /contacts HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:37216 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37220 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37224 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37240 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37254 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:37262 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37262 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "OPTIONS /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "GET /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "OPTIONS /conversations/13/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "GET /conversations/13/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "OPTIONS /conversations/14/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "GET /conversations/14/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50070 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37240 - "GET /conversations/11/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46720 - "GET /conversations/15/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46720 - "OPTIONS /conversations/15/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46720 - "DELETE /conversations/15/members/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46724 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:46726 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46726 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46726 - "GET /conversations/15/messages HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79322]
+INFO:     Started server process [82162]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:38756 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:38754 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:38776 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:38786 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:38772 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:38790 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+WARNING:  StatReload detected changes in 'app/routers/conversations.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for background tasks to complete. (CTRL+C to force quit)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [82162]
+INFO:     Started server process [82177]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:35124 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZXhwIjoxNzg1MDAyNzU3fQ.3lWbfP5RJtYs9O4qQ6uCvHOw67As2PxeDQ_t8JcLNh4" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35126 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35156 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzg1MDA0OTEzfQ.f2g5nK107_sYUri5LYQm7XDr7Uoz5j0nHPQLfZM5A00" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35140 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35144 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35172 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5IiwiZXhwIjoxNzg1MDAzNDA1fQ.RCGxN3EKNgA6RjLtpHNuzw-G1_RPLtDnRZ2-2Ds6jh8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:35180 - "OPTIONS /conversations/19/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35180 - "GET /conversations/19/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59634 - "OPTIONS /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59634 - "GET /conversations/21/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50192 - "OPTIONS /conversations/21/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50192 - "DELETE /conversations/21/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50204 - "OPTIONS /conversations/19/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50204 - "GET /conversations/19/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50204 - "OPTIONS /conversations/19/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50204 - "DELETE /conversations/19/members/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50344 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50358 - "OPTIONS /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50368 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50344 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50358 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50368 - "GET /conversations/5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53822 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53822 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53836 - "OPTIONS /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53836 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38538 - "GET /conversations/19/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38538 - "OPTIONS /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38548 - "OPTIONS /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38538 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38548 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38548 - "GET /contacts HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:38554 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38568 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38568 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38578 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:39478 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39500 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39488 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:39500 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39500 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39500 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39500 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39508 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39500 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47112 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:47118 - "OPTIONS /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47118 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47118 - "OPTIONS /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47118 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47128 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47118 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47140 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:47148 - "OPTIONS /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47148 - "POST /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47156 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49066 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49074 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49074 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49074 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49078 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49074 - "GET /contacts HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/birathar/Documents/Secure-Messaging-Platform/backend/app/routers/websockets.py", line 103, in websocket_endpoint
+    "type": new_msg.type,
+            ^^^^^^^^^^^^
+AttributeError: 'Message' object has no attribute 'type'
+INFO:     127.0.0.1:49082 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzg1MDAzNzY4fQ.aBYV3bp-iG4VHTJs_byov-9yiOmWU23717yPzIzCrpg" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49074 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49074 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49074 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49098 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49074 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59448 - "GET /users/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59462 - "WebSocket /ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzg1MDA0ODIyfQ.99GAiD-YyqfOOxjrIWGBqmySMGnr1GSkMhzMGjOTKus" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59448 - "GET /conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59448 - "GET /contacts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59466 - "GET /conversations/1/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59448 - "GET /contacts HTTP/1.1" 200 OK
