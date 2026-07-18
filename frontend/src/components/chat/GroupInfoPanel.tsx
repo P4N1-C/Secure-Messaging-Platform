@@ -10,9 +10,10 @@ interface GroupInfoPanelProps {
   currentUser: User | null;
   onAddMember: (userId: number) => Promise<void>;
   onRemoveMember: (userId: number) => Promise<void>;
+  onOpenUserInfo: (user: User) => void;
 }
 
-export function GroupInfoPanel({ isOpen, onClose, conversation, currentUser, onAddMember, onRemoveMember }: GroupInfoPanelProps) {
+export function GroupInfoPanel({ isOpen, onClose, conversation, currentUser, onAddMember, onRemoveMember, onOpenUserInfo }: GroupInfoPanelProps) {
   const [isAdding, setIsAdding] = useState(false);
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [selectedId, setSelectedId] = useState<number | null>(null);
@@ -122,7 +123,8 @@ export function GroupInfoPanel({ isOpen, onClose, conversation, currentUser, onA
                     member={member} 
                     currentUser={currentUser} 
                     isAdmin={isAdmin} 
-                    onRemove={onRemoveMember} 
+                    onRemove={onRemoveMember}
+                    onOpenUserInfo={onOpenUserInfo} 
                   />
                 ))}
               </div>

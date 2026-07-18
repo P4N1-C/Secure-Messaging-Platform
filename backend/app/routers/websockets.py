@@ -64,6 +64,7 @@ async def websocket_endpoint(websocket: WebSocket, token: str, db: AsyncSession 
                     .filter(ConversationMember.conversation_id == conversation_id, ConversationMember.user_id == user_id)
                 )
                 if not mem_res.scalars().first():
+                    await manager.send_to_user(user_id, {"type": "error", "detail": "not_a_member"})
                     continue
 
                 # Insert message
@@ -99,6 +100,7 @@ async def websocket_endpoint(websocket: WebSocket, token: str, db: AsyncSession 
                     "conversation_id": new_msg.conversation_id,
                     "sender_id": new_msg.sender_id,
                     "content": new_msg.content,
+                    "type": new_msg.type,
                     "created_at": new_msg.created_at.isoformat()
                 }
                 

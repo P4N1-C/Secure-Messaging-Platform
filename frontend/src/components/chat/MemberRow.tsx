@@ -6,17 +6,21 @@ interface MemberRowProps {
   currentUser: User | null;
   isAdmin: boolean;
   onRemove: (userId: number) => void;
+  onOpenUserInfo?: (user: User) => void;
 }
 
-export function MemberRow({ member, currentUser, isAdmin, onRemove }: MemberRowProps) {
+export function MemberRow({ member, currentUser, isAdmin, onRemove, onOpenUserInfo }: MemberRowProps) {
   const isMe = member.user.id === currentUser?.id;
   const displayName = isMe 
     ? 'You' 
     : member.user.display_name || member.user.username || member.user.phone;
 
   return (
-    <div className="flex items-center justify-between p-2 hover:bg-gray-50 rounded-lg transition-colors group">
-      <div className="flex items-center min-w-0">
+    <div className="flex items-center justify-between p-2 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors group">
+      <div 
+        className={`flex items-center min-w-0 ${!isMe ? 'cursor-pointer' : ''}`}
+        onClick={() => !isMe && onOpenUserInfo?.(member.user)}
+      >
         <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-medium shrink-0 overflow-hidden">
           {member.user.avatar_url ? (
             <img src={member.user.avatar_url} alt="avatar" className="w-full h-full object-cover" />

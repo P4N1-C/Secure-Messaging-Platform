@@ -106,6 +106,30 @@ async def create_conversation(conv: ConversationCreate, current_user: User = Dep
         
     await db.commit()
     
+    sys_msgs = []
+    if conv.type == 'group':
+        for uid in user_ids:
+            if uid == current_user.id:
+                continue
+            u = next(user for user in db_users if user.id == uid)
+            system_msg_content = f"{current_user.display_name} added {u.display_name}"
+            sys_msg = Message(
+                conversation_id=db_conv.id,
+                sender_id=None,
+                content=system_msg_content
+            )
+            db.add(sys_msg)
+            sys_msgs.append(sys_msg)
+            
+        if sys_msgs:
+            await db.flush()
+            for msg in sys_msgs:
+                for uid in user_ids:
+                    db.add(MessageStatus(message_id=msg.id, user_id=uid, status='sent'))
+            await db.commit()
+            for msg in sys_msgs:
+                await db.refresh(msg)
+
     member_responses = []
     for mem, uid in db_members:
         u = next(user for user in db_users if user.id == uid)
@@ -117,25 +141,77 @@ async def create_conversation(conv: ConversationCreate, current_user: User = Dep
     conv_resp = ConversationResponse.model_validate(db_conv)
     conv_resp.members = member_responses
     conv_resp.unread_count = 0
+    
+    if sys_msgs:
+        last_sys_msg = sys_msgs[-1]
+        conv_resp.last_message = MessageResponse.model_validate(last_sys_msg)
+        
+        from app.routers.websockets import manager
+        msg_dict = {
+            "id": last_sys_msg.id,
+            "conversation_id": last_sys_msg.conversation_id,
+            "sender_id": last_sys_msg.sender_id,
+            "content": last_sys_msg.content,
+            "created_at": last_sys_msg.created_at.isoformat()
+        }
+        
+        await manager.broadcast_to_conversation(
+            conversation_id=db_conv.id,
+            message={"type": "new_message", "message": msg_dict},
+            db=db,
+            exclude_user_id=current_user.id,
+            member_ids=list(user_ids)
+        )
+
     return conv_resp
 
 @router.get("/{id}/messages", response_model=List[MessageResponse])
 async def get_messages(id: int, current_user: User = Depends(get_current_user), db: AsyncSession = Depends(get_db), limit: int = 50, offset: int = 0):
+    conv_query = (
+        select(Conversation).distinct()
+        .outerjoin(ConversationMember)
+        .outerjoin(Message, Message.conversation_id == Conversation.id)
+        .outerjoin(MessageStatus, MessageStatus.message_id == Message.id)
+        .filter(
+            Conversation.id == id,
+            (
+                (ConversationMember.user_id == current_user.id) |
+                (Message.sender_id == current_user.id) |
+                (MessageStatus.user_id == current_user.id)
+            )
+        )
+    )
+    conv_result = await db.execute(conv_query)
+    if not conv_result.scalars().first():
+        raise HTTPException(status_code=403, detail="Not a member of this conversation")
+        
     member_query = select(ConversationMember).filter(
         ConversationMember.conversation_id == id,
         ConversationMember.user_id == current_user.id
     )
-    member_result = await db.execute(member_query)
-    if not member_result.scalars().first():
-        raise HTTPException(status_code=403, detail="Not a member of this conversation")
+    is_current_member = (await db.execute(member_query)).scalars().first() is not None
+
+    if is_current_member:
+        messages_query = (
+            select(Message)
+            .filter(Message.conversation_id == id)
+            .order_by(desc(Message.created_at))
+            .limit(limit)
+            .offset(offset)
+        )
+    else:
+        messages_query = (
+            select(Message).distinct()
+            .outerjoin(MessageStatus, MessageStatus.message_id == Message.id)
+            .filter(
+                Message.conversation_id == id,
+                (Message.sender_id == current_user.id) | (MessageStatus.user_id == current_user.id)
+            )
+            .order_by(desc(Message.created_at))
+            .limit(limit)
+            .offset(offset)
+        )
         
-    messages_query = (
-        select(Message)
-        .filter(Message.conversation_id == id)
-        .order_by(desc(Message.created_at))
-        .limit(limit)
-        .offset(offset)
-    )
     messages_result = await db.execute(messages_query)
     messages = messages_result.scalars().all()
     
@@ -181,7 +257,7 @@ async def send_message(id: int, message: MessageCreate, current_user: User = Dep
     )
     member_result = await db.execute(member_query)
     if not member_result.scalars().first():
-        raise HTTPException(status_code=403, detail="Not a member of this conversation")
+        raise HTTPException(status_code=403, detail={"type": "error", "detail": "not_a_member"})
         
     db_message = Message(
         conversation_id=id,
@@ -238,7 +314,51 @@ async def add_member(id: int, request: MemberAddRequest, current_user: User = De
     await db.commit()
     await db.refresh(db_member)
     
+    new_user_query = select(User).filter(User.id == request.user_id)
+    new_user = (await db.execute(new_user_query)).scalars().first()
+
     member_resp = MemberResponse.model_validate(db_member)
+    if new_user:
+        member_resp.user = UserResponse.model_validate(new_user)
+
+    # Insert system message
+    system_msg_content = f"{current_user.display_name} added {new_user.display_name if new_user else 'a member'}"
+    sys_msg = Message(
+        conversation_id=id,
+        sender_id=None,
+        content=system_msg_content
+    )
+    db.add(sys_msg)
+    await db.flush()
+    
+    all_members_query = select(ConversationMember.user_id).filter(
+        ConversationMember.conversation_id == id
+    )
+    all_members_result = await db.execute(all_members_query)
+    member_ids = all_members_result.scalars().all()
+    
+    for uid in member_ids:
+        db.add(MessageStatus(message_id=sys_msg.id, user_id=uid, status='sent'))
+        
+    await db.commit()
+    await db.refresh(sys_msg)
+    
+    from app.routers.websockets import manager
+    msg_dict = {
+        "id": sys_msg.id,
+        "conversation_id": sys_msg.conversation_id,
+        "sender_id": sys_msg.sender_id,
+        "content": sys_msg.content,
+        "created_at": sys_msg.created_at.isoformat()
+    }
+    await manager.broadcast_to_conversation(
+        conversation_id=id,
+        message={"type": "new_message", "message": msg_dict},
+        db=db,
+        exclude_user_id=None,
+        member_ids=member_ids
+    )
+
     return member_resp
 
 @router.delete("/{id}/members/{user_id}")
@@ -261,6 +381,52 @@ async def remove_member(id: int, user_id: int, current_user: User = Depends(get_
     if not target_member:
         raise HTTPException(status_code=404, detail="Member not found")
         
+    target_user_query = select(User).filter(User.id == user_id)
+    target_user = (await db.execute(target_user_query)).scalars().first()
+    
     await db.delete(target_member)
+    await db.flush()
+    
+    # system message
+    system_msg_content = f"{current_user.display_name} removed {target_user.display_name if target_user else 'a member'}"
+    sys_msg = Message(
+        conversation_id=id,
+        sender_id=None,
+        content=system_msg_content
+    )
+    db.add(sys_msg)
+    await db.flush()
+    
+    all_members_query = select(ConversationMember.user_id).filter(
+        ConversationMember.conversation_id == id
+    )
+    all_members_result = await db.execute(all_members_query)
+    remaining_member_ids = all_members_result.scalars().all()
+    
+    for uid in remaining_member_ids + [user_id]:
+        db.add(MessageStatus(message_id=sys_msg.id, user_id=uid, status='sent'))
+        
     await db.commit()
+    await db.refresh(sys_msg)
+    
+    from app.routers.websockets import manager
+    msg_dict = {
+        "id": sys_msg.id,
+        "conversation_id": sys_msg.conversation_id,
+        "sender_id": sys_msg.sender_id,
+        "content": sys_msg.content,
+        "created_at": sys_msg.created_at.isoformat()
+    }
+    
+    if remaining_member_ids:
+        await manager.broadcast_to_conversation(
+            conversation_id=id,
+            message={"type": "new_message", "message": msg_dict},
+            db=db,
+            exclude_user_id=None,
+            member_ids=remaining_member_ids
+        )
+        
+    await manager.send_to_user(user_id, {"type": "removed_from_group", "conversation_id": id})
+    
     return {"message": "Member removed"}

@@ -24,7 +24,7 @@ export interface Message {
   id: number | string;
   content: string;
   created_at: string;
-  sender_id: number;
+  sender_id?: number | null;
   isFailed?: boolean;
   status?: 'sent' | 'delivered' | 'read';
 }
