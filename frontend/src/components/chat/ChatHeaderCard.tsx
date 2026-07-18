@@ -7,6 +7,7 @@ interface ChatHeaderCardProps {
   getConversationName: (conv: Conversation) => string;
   getConversationAvatar: (conv: Conversation) => string;
   firstMessage?: Message;
+  onOpenInfo?: () => void;
 }
 
 export function ChatHeaderCard({
@@ -14,12 +15,13 @@ export function ChatHeaderCard({
   currentUser,
   getConversationName,
   getConversationAvatar,
-  firstMessage
+  firstMessage,
+  onOpenInfo
 }: ChatHeaderCardProps) {
   return (
     <div className="flex flex-col items-center mt-10 mb-4">
-      <div className="relative border border-gray-200 rounded-[28px] min-w-[260px] pt-10 pb-5 px-6 flex flex-col items-center bg-white">
-        <div className="absolute -top-10 w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-medium text-3xl shrink-0 overflow-hidden border-4 border-white">
+      <div className="relative border border-gray-200 dark:border-gray-800 rounded-[28px] min-w-[260px] pt-10 pb-5 px-6 flex flex-col items-center bg-white dark:bg-gray-900">
+        <div className="absolute -top-10 w-20 h-20 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-medium text-3xl shrink-0 overflow-hidden border-4 border-white dark:border-gray-900">
           {(() => {
             if (selectedConversation.type === 'direct') {
               const otherMember = selectedConversation.members.find(m => m.user.id !== currentUser?.id);
@@ -31,8 +33,8 @@ export function ChatHeaderCard({
           })()}
         </div>
         
-        <div className="flex items-center gap-1 mt-1 cursor-pointer hover:underline">
-          <h2 className="text-[16px] font-medium text-gray-900 text-center">
+        <div className="flex items-center gap-1 mt-1 cursor-pointer hover:underline" onClick={onOpenInfo}>
+          <h2 className="text-[16px] font-medium text-gray-900 dark:text-gray-100 text-center">
             {getConversationName(selectedConversation)}
           </h2>
           {selectedConversation.type === 'direct' && (

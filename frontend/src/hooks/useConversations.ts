@@ -33,15 +33,84 @@ export function useConversations(currentUser: User | null) {
     );
   }, [conversations, searchQuery, currentUser]);
 
-  const updateConversationLastMessage = (conversationId: number, lastMessage: any) => {
+  const updateConversationLastMessage = (conversationId: number, lastMessage: any, incrementUnread: boolean = false) => {
+    const exists = conversations.some(c => c.id === conversationId);
+    if (!exists) {
+      fetchConversations()
+        .then(setConversations)
+        .catch(err => console.error('Failed to refetch conversations for new message', err));
+      return;
+    }
+
+    setConversations(prev => {
+      const next = prev.map(c => 
+        c.id === conversationId 
+          ? { 
+              ...c, 
+              last_message: lastMessage,
+              unread_count: incrementUnread ? (c.unread_count || 0) + 1 : c.unread_count
+            }
+          : c
+      );
+      return next.sort((a, b) => {
+        const aTime = a.last_message ? new Date(a.last_message.created_at).getTime() : (a.created_at ? new Date(a.created_at).getTime() : 0);
+        const bTime = b.last_message ? new Date(b.last_message.created_at).getTime() : (b.created_at ? new Date(b.created_at).getTime() : 0);
+        return bTime - aTime;
+      });
+    });
+  };
+
+  const markConversationAsRead = (conversationId: number) => {
     setConversations(prev => 
       prev.map(c => 
         c.id === conversationId 
-          ? { ...c, last_message: lastMessage }
+          ? { ...c, unread_count: 0 }
           : c
       )
     );
   };
+
+  const handleCreateGroup = async (name: string, userIds: number[]) => {
+    const { createGroup } = await import('@/lib/api/conversations');
+    const newGroup = await createGroup(name, userIds);
+    setConversations(prev => [newGroup, ...prev]);
+    return newGroup;
+  };
+
+  const handleCreateDirectConversation = async (userId: number) => {
+    const { createDirectConversation } = await import('@/lib/api/conversations');
+    const newConv = await createDirectConversation(userId);
+    setConversations(prev => [newConv, ...prev]);
+    return newConv;
+  };
+
+
+  const handleAddMember = async (conversationId: number, userId: number) => {
+    const { addMember } = await import('@/lib/api/conversations');
+    const newMember = await addMember(conversationId, userId);
+    setConversations(prev => 
+      prev.map(c => {
+        if (c.id === conversationId) {
+          return { ...c, members: [...c.members, newMember] };
+        }
+        return c;
+      })
+    );
+  };
+
+  const handleRemoveMember = async (conversationId: number, userId: number) => {
+    const { removeMember } = await import('@/lib/api/conversations');
+    await removeMember(conversationId, userId);
+    setConversations(prev => 
+      prev.map(c => {
+        if (c.id === conversationId) {
+          return { ...c, members: c.members.filter(m => m.user.id !== userId) };
+        }
+        return c;
+      })
+    );
+  };
+
 
   return {
     conversations,
@@ -51,5 +120,10 @@ export function useConversations(currentUser: User | null) {
     getConversationName,
     getConversationAvatar,
     updateConversationLastMessage,
+    markConversationAsRead,
+    handleCreateGroup,
+    handleCreateDirectConversation,
+    handleAddMember,
+    handleRemoveMember,
   };
 }

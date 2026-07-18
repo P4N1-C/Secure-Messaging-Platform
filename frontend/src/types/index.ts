@@ -9,6 +9,15 @@ export interface User {
 export interface Member {
   id: number;
   user: User;
+  role?: string;
+}
+
+export interface Contact {
+  id: number;
+  user_id: number;
+  contact_user_id: number;
+  created_at: string;
+  contact_user: User;
 }
 
 export interface Message {
@@ -17,6 +26,7 @@ export interface Message {
   created_at: string;
   sender_id: number;
   isFailed?: boolean;
+  status?: 'sent' | 'delivered' | 'read';
 }
 
 export interface Conversation {
@@ -26,4 +36,5 @@ export interface Conversation {
   members: Member[];
   last_message?: Message;
   unread_count: number;
+  created_at?: string;
 }

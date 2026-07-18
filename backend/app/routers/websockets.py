@@ -81,6 +81,7 @@ async def websocket_endpoint(websocket: WebSocket, token: str, db: AsyncSession 
                     .filter(ConversationMember.conversation_id == conversation_id)
                 )
                 member_ids = all_mem_res.scalars().all()
+                
                 for mid in member_ids:
                     if mid != user_id:
                         db.add(MessageStatus(
@@ -111,7 +112,8 @@ async def websocket_endpoint(websocket: WebSocket, token: str, db: AsyncSession 
                     conversation_id=conversation_id,
                     message=broadcast_payload,
                     db=db,
-                    exclude_user_id=user_id
+                    exclude_user_id=user_id,
+                    member_ids=member_ids
                 )
                 
                 # Send confirmed message back to sender for optimistic UI reconciliation
@@ -169,12 +171,17 @@ async def websocket_endpoint(websocket: WebSocket, token: str, db: AsyncSession 
                         )
 
     except WebSocketDisconnect:
-        manager.disconnect(user_id)
-        # Update user offline status
-        user.is_online = False
-        user.last_seen = utcnow()
-        await db.commit()
+        manager.disconnect(user_id, websocket)
+        # Update user offline status if no other connections exist
+        if not manager.active_connections.get(user_id):
+            user.is_online = False
+            user.last_seen = utcnow()
+            await db.commit()
     except Exception as e:
         import traceback
         traceback.print_exc()
-        manager.disconnect(user_id)
+        manager.disconnect(user_id, websocket)
+        if not manager.active_connections.get(user_id):
+            user.is_online = False
+            user.last_seen = utcnow()
+            await db.commit()

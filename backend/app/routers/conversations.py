@@ -93,6 +93,7 @@ async def create_conversation(conv: ConversationCreate, current_user: User = Dep
     await db.commit()
     await db.refresh(db_conv)
     
+    db_members = []
     for uid in user_ids:
         role = 'admin' if uid == current_user.id and conv.type == 'group' else 'member'
         member = ConversationMember(
@@ -101,11 +102,20 @@ async def create_conversation(conv: ConversationCreate, current_user: User = Dep
             role=role
         )
         db.add(member)
+        db_members.append((member, uid))
         
     await db.commit()
     
+    member_responses = []
+    for mem, uid in db_members:
+        u = next(user for user in db_users if user.id == uid)
+        user_resp = UserResponse.model_validate(u)
+        member_resp = MemberResponse.model_validate(mem)
+        member_resp.user = user_resp
+        member_responses.append(member_resp)
+    
     conv_resp = ConversationResponse.model_validate(db_conv)
-    conv_resp.members = []
+    conv_resp.members = member_responses
     conv_resp.unread_count = 0
     return conv_resp
 
@@ -129,7 +139,39 @@ async def get_messages(id: int, current_user: User = Depends(get_current_user), 
     messages_result = await db.execute(messages_query)
     messages = messages_result.scalars().all()
     
-    return messages
+    if not messages:
+        return []
+        
+    message_ids = [m.id for m in messages]
+    status_query = select(MessageStatus).filter(MessageStatus.message_id.in_(message_ids))
+    status_result = await db.execute(status_query)
+    all_statuses = status_result.scalars().all()
+    
+    status_map = {}
+    for st in all_statuses:
+        if st.message_id not in status_map:
+            status_map[st.message_id] = {}
+        status_map[st.message_id][st.user_id] = st.status
+        
+    responses = []
+    for msg in messages:
+        msg_resp = MessageResponse.model_validate(msg)
+        st_dict = status_map.get(msg.id, {})
+        
+        if msg.sender_id == current_user.id:
+            st_list = list(st_dict.values())
+            if "read" in st_list:
+                msg_resp.status = "read"
+            elif "delivered" in st_list:
+                msg_resp.status = "delivered"
+            elif st_list:
+                msg_resp.status = "sent"
+        else:
+            msg_resp.status = st_dict.get(current_user.id, "sent")
+            
+        responses.append(msg_resp)
+    
+    return responses
 
 @router.post("/{id}/messages", response_model=MessageResponse)
 async def send_message(id: int, message: MessageCreate, current_user: User = Depends(get_current_user), db: AsyncSession = Depends(get_db)):
