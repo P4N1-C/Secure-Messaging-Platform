@@ -8,16 +8,16 @@ CREATE TABLE users (
   display_name TEXT NOT NULL,
   avatar_url TEXT,
   password_hash TEXT,
-  last_seen DATETIME,
+  last_seen TIMESTAMP WITH TIME ZONE,
   is_online BOOLEAN DEFAULT 0,
-  created_at DATETIME
+  created_at TIMESTAMP WITH TIME ZONE
 );
 
 CREATE TABLE contacts (
   id INTEGER PRIMARY KEY,
   user_id INTEGER REFERENCES users(id),
   contact_user_id INTEGER REFERENCES users(id),
-  created_at DATETIME,
+  created_at TIMESTAMP WITH TIME ZONE,
   UNIQUE(user_id, contact_user_id)
 );
 
@@ -27,7 +27,7 @@ CREATE TABLE conversations (
   name TEXT,
   avatar_url TEXT,
   created_by INTEGER REFERENCES users(id),
-  created_at DATETIME
+  created_at TIMESTAMP WITH TIME ZONE
 );
 
 CREATE TABLE conversation_members (
@@ -35,7 +35,7 @@ CREATE TABLE conversation_members (
   conversation_id INTEGER REFERENCES conversations(id),
   user_id INTEGER REFERENCES users(id),
   role TEXT CHECK(role IN ('admin','member')) DEFAULT 'member',
-  joined_at DATETIME,
+  joined_at TIMESTAMP WITH TIME ZONE,
   UNIQUE(conversation_id, user_id)
 );
 
@@ -44,7 +44,7 @@ CREATE TABLE messages (
   conversation_id INTEGER REFERENCES conversations(id),
   sender_id INTEGER REFERENCES users(id),
   content TEXT NOT NULL,
-  created_at DATETIME
+  created_at TIMESTAMP WITH TIME ZONE
 );
 
 CREATE TABLE message_status (
@@ -52,7 +52,7 @@ CREATE TABLE message_status (
   message_id INTEGER REFERENCES messages(id),
   user_id INTEGER REFERENCES users(id),
   status TEXT CHECK(status IN ('sent','delivered','read')) DEFAULT 'sent',
-  updated_at DATETIME,
+  updated_at TIMESTAMP WITH TIME ZONE,
   UNIQUE(message_id, user_id)
 );
 

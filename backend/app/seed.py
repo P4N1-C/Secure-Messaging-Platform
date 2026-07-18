@@ -119,9 +119,10 @@ async def seed():
         now_naive = now.replace(tzinfo=None)
         statuses = []
         for msg in messages:
+            msg_created_at = msg.created_at.replace(tzinfo=None) if msg.created_at.tzinfo else msg.created_at
             if msg.conversation_id == conv1.id:
                 recipient = u_bob if msg.sender_id == u_alice.id else u_alice
-                status = "read" if (now_naive - msg.created_at) > timedelta(hours=2) else "delivered"
+                status = "read" if (now_naive - msg_created_at) > timedelta(hours=2) else "delivered"
                 statuses.append(MessageStatus(message_id=msg.id, user_id=recipient.id, status=status, updated_at=msg.created_at + timedelta(minutes=1)))
             
             elif msg.conversation_id == conv2.id:
@@ -138,7 +139,7 @@ async def seed():
                 for user in group_users:
                     if user.id != msg.sender_id:
                         # mix of statuses based on user and time
-                        if (now_naive - msg.created_at) > timedelta(days=1):
+                        if (now_naive - msg_created_at) > timedelta(days=1):
                             status = "read"
                         elif user == u_bob:
                             status = "delivered"
