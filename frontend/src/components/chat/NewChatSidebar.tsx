@@ -124,7 +124,7 @@ export function NewChatSidebar({
                    className="flex items-center px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer rounded-lg mx-2 transition-colors"
                  >
                    <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0">
-                     {user.display_name?.[0]?.toUpperCase() || user.username[0]?.toUpperCase() || 'U'}
+                     {user.display_name?.[0]?.toUpperCase() || user.username?.[0]?.toUpperCase() || 'U'}
                    </div>
                    <div className="flex flex-col min-w-0">
                      <span className="text-[15px] font-medium text-gray-900 dark:text-gray-100 truncate">
@@ -185,7 +185,7 @@ export function NewChatSidebar({
                    className="flex items-center px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer rounded-lg mx-2 transition-colors"
                  >
                    <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0">
-                     {user.display_name?.[0]?.toUpperCase() || user.username[0]?.toUpperCase() || 'U'}
+                     {user.display_name?.[0]?.toUpperCase() || user.username?.[0]?.toUpperCase() || 'U'}
                    </div>
                    <div className="flex flex-col min-w-0">
                      <span className="text-[15px] font-medium text-gray-900 dark:text-gray-100 truncate">
