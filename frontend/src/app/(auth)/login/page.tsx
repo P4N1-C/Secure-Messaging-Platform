@@ -8,11 +8,16 @@ export default function LoginPage() {
   const router = useRouter();
   const [identifier, setIdentifier] = useState('');
   const [otpSent, setOtpSent] = useState(false);
-  const [otp, setOtp] = useState('123456');
+  const [otp, setOtp] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value.replace(/\D/g, '').slice(0, 10);
+    setIdentifier(val);
+  };
 
   const handleRequestOTP = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,8 +25,10 @@ export default function LoginPage() {
     setLoading(true);
     
     try {
-      const isPhone = /^\+?[0-9]+$/.test(identifier);
-      const payload = isPhone ? { phone: identifier } : { username: identifier };
+      if (identifier.length < 10) {
+        throw new Error("Phone number must be exactly 10 digits");
+      }
+      const payload = { phone: `+91${identifier}` };
 
       const res = await fetch(`${API_URL}/auth/login`, {
         method: 'POST',
@@ -49,8 +56,7 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const isPhone = /^\+?[0-9]+$/.test(identifier);
-      const payload = isPhone ? { phone: identifier, otp } : { username: identifier, otp };
+      const payload = { phone: `+91${identifier}`, otp };
 
       const res = await fetch(`${API_URL}/auth/verify-otp`, {
         method: 'POST',
@@ -83,7 +89,7 @@ export default function LoginPage() {
             </svg>
           </div>
           <h1 className="text-2xl font-bold text-gray-900">Sign in to Signal</h1>
-          <p className="text-gray-500 mt-2">Enter your username or phone number</p>
+          <p className="text-gray-500 mt-2">Enter your phone number</p>
         </div>
 
         {error && (
@@ -95,15 +101,20 @@ export default function LoginPage() {
         {!otpSent ? (
           <form onSubmit={handleRequestOTP} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Username or Phone</label>
-              <input
-                type="text"
-                value={identifier}
-                onChange={(e) => setIdentifier(e.target.value)}
-                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors"
-                placeholder="@username or +1234567890"
-                required
-              />
+              <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+              <div className="flex w-full bg-gray-100 rounded-full focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-100 focus-within:border-blue-600 border border-transparent transition-colors overflow-hidden">
+                <span className="flex items-center pl-4 pr-2 text-gray-500 font-medium">
+                  +91
+                </span>
+                <input
+                  type="text"
+                  value={identifier}
+                  onChange={handlePhoneChange}
+                  className="w-full bg-transparent py-3 px-2 outline-none text-gray-900"
+                  placeholder="Enter Phone Number"
+                  required
+                />
+              </div>
             </div>
             <button
               type="submit"
@@ -121,7 +132,7 @@ export default function LoginPage() {
                 type="text"
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
-                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors"
+                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors text-gray-900"
                 placeholder="123456"
                 required
               />

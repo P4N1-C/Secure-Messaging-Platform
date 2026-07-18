@@ -3,18 +3,16 @@ from typing import Optional, List
 from datetime import datetime
 
 class UserCreate(BaseModel):
-    username: str
-    phone: Optional[str] = None
+    phone: str
+    username: Optional[str] = None
     display_name: str
     avatar_url: Optional[str] = None
 
 class LoginRequest(BaseModel):
-    username: Optional[str] = None
-    phone: Optional[str] = None
+    phone: str
 
 class VerifyOTPRequest(BaseModel):
-    username: Optional[str] = None
-    phone: Optional[str] = None
+    phone: str
     otp: str
 
 class Token(BaseModel):
@@ -23,8 +21,8 @@ class Token(BaseModel):
 
 class UserResponse(BaseModel):
     id: int
-    username: str
-    phone: Optional[str] = None
+    phone: str
+    username: Optional[str] = None
     display_name: str
     avatar_url: Optional[str] = None
 

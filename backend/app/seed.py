@@ -21,16 +21,16 @@ async def seed():
         print("Seeding users...")
         now = datetime.now(timezone.utc)
         users_data = [
-            {"username": "alice", "phone": "+1234567890", "display_name": "Alice Smith"},
-            {"username": "bob", "phone": "+1987654321", "display_name": "Bob Jones"},
-            {"username": "charlie", "phone": "+1122334455", "display_name": "Charlie Brown"},
-            {"username": "diana", "phone": "+1555666777", "display_name": "Diana Prince"},
-            {"username": "eve", "phone": "+1999888777", "display_name": "Eve Adams"}
+            {"username": "alice", "phone": "+911234567890", "display_name": "Alice Smith"},
+            {"username": "bob", "phone": "+919876543210", "display_name": "Bob Jones"},
+            {"username": None, "phone": "+911122334455", "display_name": "Charlie Brown"},
+            {"username": None, "phone": "+915556667777", "display_name": "Diana Prince"},
+            {"username": None, "phone": "+919998887777", "display_name": "Eve Adams"}
         ]
         users = []
         for u_data in users_data:
             user = User(
-                username=u_data["username"],
+                username=u_data.get("username"),
                 phone=u_data["phone"],
                 display_name=u_data["display_name"],
                 created_at=now - timedelta(days=10)

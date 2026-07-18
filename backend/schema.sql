@@ -3,8 +3,8 @@ PRAGMA journal_mode = WAL;
 
 CREATE TABLE users (
   id INTEGER PRIMARY KEY,
-  username TEXT UNIQUE NOT NULL,
-  phone TEXT UNIQUE,
+  username TEXT UNIQUE,
+  phone TEXT UNIQUE NOT NULL,
   display_name TEXT NOT NULL,
   avatar_url TEXT,
   password_hash TEXT,

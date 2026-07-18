@@ -14,11 +14,16 @@ export default function RegisterPage() {
     avatarUrl: ''
   });
   const [otpSent, setOtpSent] = useState(false);
-  const [otp, setOtp] = useState('123456');
+  const [otp, setOtp] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value.replace(/\D/g, '').slice(0, 10);
+    setFormData({ ...formData, phone: val });
+  };
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,9 +31,12 @@ export default function RegisterPage() {
     setLoading(true);
     
     try {
+      if (formData.phone.length < 10) {
+        throw new Error("Phone number must be exactly 10 digits");
+      }
       const payload = {
-        username: formData.username,
-        phone: formData.phone || null,
+        phone: `+91${formData.phone}`,
+        username: formData.username || null,
         display_name: formData.displayName,
         avatar_url: formData.avatarUrl || null
       };
@@ -60,7 +68,7 @@ export default function RegisterPage() {
 
     try {
       const payload = {
-        username: formData.username,
+        phone: `+91${formData.phone}`,
         otp
       };
 
@@ -107,15 +115,20 @@ export default function RegisterPage() {
         {!otpSent ? (
           <form onSubmit={handleRegister} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Username *</label>
-              <input
-                type="text"
-                value={formData.username}
-                onChange={(e) => setFormData({ ...formData, username: e.target.value })}
-                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors"
-                placeholder="Unique username"
-                required
-              />
+              <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+              <div className="flex w-full bg-gray-100 rounded-full focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-100 focus-within:border-blue-600 border border-transparent transition-colors overflow-hidden">
+                <span className="flex items-center pl-4 pr-2 text-gray-500 font-medium">
+                  +91
+                </span>
+                <input
+                  type="text"
+                  value={formData.phone}
+                  onChange={handlePhoneChange}
+                  className="w-full bg-transparent py-3 px-2 outline-none text-gray-900"
+                  placeholder="Enter Phone Number"
+                  required
+                />
+              </div>
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Display Name *</label>
@@ -123,19 +136,19 @@ export default function RegisterPage() {
                 type="text"
                 value={formData.displayName}
                 onChange={(e) => setFormData({ ...formData, displayName: e.target.value })}
-                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors"
+                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors text-gray-900"
                 placeholder="How you appear to others"
                 required
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Phone (Optional)</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Username (Optional)</label>
               <input
-                type="tel"
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors"
-                placeholder="+1234567890"
+                type="text"
+                value={formData.username}
+                onChange={(e) => setFormData({ ...formData, username: e.target.value })}
+                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors text-gray-900"
+                placeholder="Unique username"
               />
             </div>
             <div>
@@ -144,7 +157,7 @@ export default function RegisterPage() {
                 type="url"
                 value={formData.avatarUrl}
                 onChange={(e) => setFormData({ ...formData, avatarUrl: e.target.value })}
-                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors"
+                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors text-gray-900"
                 placeholder="https://..."
               />
             </div>
@@ -165,7 +178,7 @@ export default function RegisterPage() {
                 type="text"
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
-                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors"
+                className="w-full bg-gray-100 border-transparent rounded-full py-3 px-4 focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-colors text-gray-900"
                 placeholder="123456"
                 required
               />

@@ -24,20 +24,13 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
         await db.refresh(db_user)
     except IntegrityError:
         await db.rollback()
-        raise HTTPException(status_code=400, detail="Username or phone already registered")
+        raise HTTPException(status_code=400, detail="Phone or username already registered")
         
     return {"message": "User created. OTP is 123456"}
 
 @router.post("/login")
 async def login(request: LoginRequest, db: AsyncSession = Depends(get_db)):
-    if not request.username and not request.phone:
-        raise HTTPException(status_code=400, detail="Must provide username or phone")
-        
-    query = select(User)
-    if request.username:
-        query = query.filter(User.username == request.username)
-    else:
-        query = query.filter(User.phone == request.phone)
+    query = select(User).filter(User.phone == request.phone)
         
     result = await db.execute(query)
     user = result.scalars().first()
@@ -49,17 +42,10 @@ async def login(request: LoginRequest, db: AsyncSession = Depends(get_db)):
 
 @router.post("/verify-otp", response_model=Token)
 async def verify_otp(request: VerifyOTPRequest, response: Response, db: AsyncSession = Depends(get_db)):
-    if not request.username and not request.phone:
-        raise HTTPException(status_code=400, detail="Must provide username or phone")
-        
     if request.otp != "123456":
         raise HTTPException(status_code=401, detail="Invalid OTP")
         
-    query = select(User)
-    if request.username:
-        query = query.filter(User.username == request.username)
-    else:
-        query = query.filter(User.phone == request.phone)
+    query = select(User).filter(User.phone == request.phone)
         
     result = await db.execute(query)
     user = result.scalars().first()
