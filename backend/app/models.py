@@ -10,8 +10,8 @@ class User(Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, unique=True, nullable=False, index=True)
-    phone = Column(String, unique=True, index=True)
+    username = Column(String, unique=True, nullable=True, index=True)
+    phone = Column(String, unique=True, nullable=False, index=True)
     display_name = Column(String, nullable=False)
     avatar_url = Column(String, nullable=True)
     password_hash = Column(String, nullable=True)
