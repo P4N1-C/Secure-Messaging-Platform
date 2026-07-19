@@ -24,10 +24,8 @@ A functional Signal-style secure messaging application built as a full-stack clo
 
 ## 📸 Screenshots
 
-<p align="center">
   <img src="./docs/direct_message_dark.png" alt="Direct Message" width="48%">
   <img src="./docs/group_chat_light.png" alt="Group Chat" width="48%">
-</p>
 
 ---
 
@@ -227,3 +225,4 @@ CREATE TABLE message_status (
 - **Development Warnings** — A WebSocket console error (`WS error {}`) may occasionally appear in local dev. This is a known, cosmetic side-effect of React Strict Mode's intentional double-invoke of `useEffect`, closing the initial connection prematurely. The connection self-recovers and remains functional.
 - **Free Tier Cold Starts** — Render's free tier spins down after inactivity; the first request after idle time may take 30-50 seconds.
 - **Deferred Group Features** — Leaving a group voluntarily and promoting other members to admin were considered but kept out of scope, to stay within the assignment's explicit "add/remove members" requirement.
+- **Image Handling** — Avatar/profile images are set via image URL input, not direct file upload — no actual file storage/upload handling was implemented.
