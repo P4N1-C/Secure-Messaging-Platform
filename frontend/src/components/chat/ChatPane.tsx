@@ -64,8 +64,16 @@ export function ChatPane({
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
         </button>
-        <div className="h-10 w-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-medium text-lg shrink-0">
-          {getConversationAvatar(selectedConversation)}
+        <div className="h-10 w-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-medium text-lg shrink-0 overflow-hidden">
+          {(() => {
+            if (selectedConversation.type === 'direct') {
+              const otherMember = selectedConversation.members.find(m => m.user.id !== currentUser?.id);
+              if (otherMember?.user.avatar_url) {
+                return <img src={otherMember.user.avatar_url} alt="avatar" className="w-full h-full object-cover" />;
+              }
+            }
+            return getConversationAvatar(selectedConversation);
+          })()}
         </div>
         <div className="ml-3 flex-1 overflow-hidden">
           <h2 className="text-[15px] font-semibold text-gray-900 dark:text-gray-100 truncate">
