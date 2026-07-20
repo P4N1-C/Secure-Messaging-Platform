@@ -37,8 +37,12 @@ export function SettingsView({ currentUser, isDarkMode, setIsDarkMode }: Setting
               onClick={() => setActiveTab('profile')}
               className={`p-3 rounded-2xl flex items-center gap-4 cursor-pointer transition-colors ${activeTab === 'profile' ? 'bg-gray-200 dark:bg-gray-800' : 'hover:bg-gray-200 dark:hover:bg-gray-800'}`}
             >
-              <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold shrink-0 text-xl">
-                {currentUser?.display_name?.[0]?.toUpperCase() || currentUser?.username?.[0]?.toUpperCase() || 'U'}
+              <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold shrink-0 text-xl overflow-hidden">
+                {currentUser?.avatar_url ? (
+                  <img src={currentUser.avatar_url} alt="avatar" className="w-full h-full object-cover" />
+                ) : (
+                  currentUser?.display_name?.[0]?.toUpperCase() || currentUser?.username?.[0]?.toUpperCase() || 'U'
+                )}
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-[15px] font-semibold text-gray-900 dark:text-gray-100 truncate">
@@ -78,8 +82,12 @@ export function SettingsView({ currentUser, isDarkMode, setIsDarkMode }: Setting
               <h2 className="text-[15px] font-medium text-gray-900 dark:text-white text-center mb-10">Profile</h2>
               
               <div className="flex flex-col items-center mb-12">
-                <div className="w-24 h-24 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 text-4xl font-bold mb-4">
-                  {currentUser?.display_name?.[0]?.toUpperCase() || currentUser?.username?.[0]?.toUpperCase() || 'U'}
+                <div className="w-24 h-24 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 text-4xl font-bold mb-4 overflow-hidden">
+                  {currentUser?.avatar_url ? (
+                    <img src={currentUser.avatar_url} alt="avatar" className="w-full h-full object-cover" />
+                  ) : (
+                    currentUser?.display_name?.[0]?.toUpperCase() || currentUser?.username?.[0]?.toUpperCase() || 'U'
+                  )}
                 </div>
                 <button className="px-4 py-1.5 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-[13px] font-medium text-gray-900 dark:text-gray-100 rounded-full transition-colors">
                   Edit photo

@@ -123,8 +123,12 @@ export function NewChatSidebar({
                    onClick={() => onUserSelect(user.id)}
                    className="flex items-center px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer rounded-lg mx-2 transition-colors"
                  >
-                   <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0">
-                     {user.display_name?.[0]?.toUpperCase() || user.username?.[0]?.toUpperCase() || 'U'}
+                   <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0 overflow-hidden">
+                     {user.avatar_url ? (
+                       <img src={user.avatar_url} alt="avatar" className="w-full h-full object-cover" />
+                     ) : (
+                       user.display_name?.[0]?.toUpperCase() || user.username?.[0]?.toUpperCase() || 'U'
+                     )}
                    </div>
                    <div className="flex flex-col min-w-0">
                      <span className="text-[15px] font-medium text-gray-900 dark:text-gray-100 truncate">
@@ -184,8 +188,12 @@ export function NewChatSidebar({
                    onClick={() => onUserSelect(user.id)}
                    className="flex items-center px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer rounded-lg mx-2 transition-colors"
                  >
-                   <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0">
-                     {user.display_name?.[0]?.toUpperCase() || user.username?.[0]?.toUpperCase() || 'U'}
+                   <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0 overflow-hidden">
+                     {user.avatar_url ? (
+                       <img src={user.avatar_url} alt="avatar" className="w-full h-full object-cover" />
+                     ) : (
+                       user.display_name?.[0]?.toUpperCase() || user.username?.[0]?.toUpperCase() || 'U'
+                     )}
                    </div>
                    <div className="flex flex-col min-w-0">
                      <span className="text-[15px] font-medium text-gray-900 dark:text-gray-100 truncate">
@@ -267,8 +275,16 @@ export function NewChatSidebar({
                   onClick={() => onSelectConversation(conv)}
                   className="flex items-center px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer rounded-lg mx-2 transition-colors"
                 >
-                  <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0">
-                    {getConversationAvatar(conv)}
+                  <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0 overflow-hidden">
+                    {(() => {
+                      if (conv.type === 'direct') {
+                        const otherMember = conv.members.find(m => m.user.id !== currentUser?.id);
+                        if (otherMember?.user.avatar_url) {
+                          return <img src={otherMember.user.avatar_url} alt="avatar" className="w-full h-full object-cover" />;
+                        }
+                      }
+                      return getConversationAvatar(conv);
+                    })()}
                   </div>
                   <span className="text-[15px] font-medium text-gray-900 dark:text-gray-100 truncate">
                     {getConversationName(conv)}
@@ -289,7 +305,7 @@ export function NewChatSidebar({
                   onClick={() => onSelectConversation(conv)}
                   className="flex items-center px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer rounded-lg mx-2 transition-colors"
                 >
-                  <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mr-3 text-blue-600 dark:text-blue-400 font-bold shrink-0 overflow-hidden">
                     {getConversationAvatar(conv)}
                   </div>
                   <div className="flex flex-col min-w-0">
