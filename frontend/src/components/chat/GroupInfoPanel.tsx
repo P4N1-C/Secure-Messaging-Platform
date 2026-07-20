@@ -49,10 +49,10 @@ export function GroupInfoPanel({ isOpen, onClose, conversation, currentUser, onA
 
   return (
     <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-xl shadow-lg w-full max-w-sm flex flex-col max-h-[80vh]">
-        <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
-          <h2 className="text-xl font-bold text-gray-900">{isAdding ? 'Add Member' : 'Group Info'}</h2>
-          <button onClick={() => isAdding ? setIsAdding(false) : onClose()} className="text-gray-400 hover:text-gray-600">
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg w-full max-w-sm flex flex-col max-h-[80vh]">
+        <div className="px-6 py-4 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">{isAdding ? 'Add Member' : 'Group Info'}</h2>
+          <button onClick={() => isAdding ? setIsAdding(false) : onClose()} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isAdding ? "M15 19l-7-7 7-7" : "M6 18L18 6M6 6l12 12"} />
             </svg>
@@ -63,28 +63,28 @@ export function GroupInfoPanel({ isOpen, onClose, conversation, currentUser, onA
           {isAdding ? (
             <div>
               {loading ? (
-                <div className="text-sm text-gray-500 text-center py-4">Loading contacts...</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400 text-center py-4">Loading contacts...</div>
               ) : availableContacts.length === 0 ? (
-                <div className="text-sm text-gray-500 text-center py-4">No available contacts to add.</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400 text-center py-4">No available contacts to add.</div>
               ) : (
                 <div className="space-y-2">
                   {availableContacts.map(c => (
-                    <label key={c.id} className="flex items-center p-2 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors">
+                    <label key={c.id} className="flex items-center p-2 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg cursor-pointer transition-colors">
                       <input 
                         type="radio"
                         name="contact"
                         checked={selectedId === c.contact_user.id}
                         onChange={() => setSelectedId(c.contact_user.id)}
-                        className="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+                        className="w-4 h-4 text-blue-600 border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-blue-500"
                       />
-                      <div className="w-8 h-8 ml-3 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-medium shrink-0 overflow-hidden text-sm">
+                      <div className="w-8 h-8 ml-3 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 font-medium shrink-0 overflow-hidden text-sm">
                         {c.contact_user.avatar_url ? (
                           <img src={c.contact_user.avatar_url} alt="avatar" className="w-full h-full object-cover" />
                         ) : (
                           (c.contact_user.display_name?.[0] || c.contact_user.username?.[0] || 'U').toUpperCase()
                         )}
                       </div>
-                      <span className="ml-3 text-sm font-medium text-gray-900 truncate">
+                      <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-100 truncate">
                         {c.contact_user.display_name || c.contact_user.username || c.contact_user.phone}
                       </span>
                     </label>
@@ -104,11 +104,11 @@ export function GroupInfoPanel({ isOpen, onClose, conversation, currentUser, onA
           ) : (
             <div>
               <div className="flex items-center justify-between mb-4 px-2">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">{conversation.members.length} Members</h3>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider">{conversation.members.length} Members</h3>
                 {isAdmin && (
                   <button 
                     onClick={() => setIsAdding(true)}
-                    className="text-sm font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 px-2 py-1 rounded transition-colors flex items-center gap-1"
+                    className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-2 py-1 rounded transition-colors flex items-center gap-1"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
                     Add
